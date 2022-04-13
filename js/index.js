@@ -21,7 +21,6 @@ function mascaraPhone(i) {
 function validar() {
     var name = formuser.nome.value;
     var telefone = formuser.telefone.value;
-    var corte = formuser.corte.value;
     
     if (name == "" || name.length <= 5) {
         alert("Informe o nome completo");
@@ -31,11 +30,6 @@ function validar() {
     if (telefone === "" || telefone.length <= 14) {
         alert("Informe um numero de telefone correto");
         formuser.telefone.focus();
-        return false;
-    }
-    if (corte == "" || corte.length <= 5) {
-        alert("Informe um corte");
-        formuser.cpf.focus();
         return false;
     }
 }
