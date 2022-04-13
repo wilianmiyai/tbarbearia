@@ -24,6 +24,14 @@ class Contato extends CI_Controller {
         $dados['corte'] = $this->input->post('corte');
         //chamando o método inserir($) do model carro
         $result = $this->contato->inserir($dados);
+			if ($result == true) {
+            //redireciona para o controller pessoa
+            $this->session->set_tempdata('msg', 'Agendado com sucesso', 5);
+            redirect('contato');
+        } else {
+            $this->session->set_tempdata('msg', 'Eroo ao agendar', 5);
+            redirect('contato');
+        }
     }
     }
 
