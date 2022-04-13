@@ -68,6 +68,7 @@
                                     <label>Como você quer o corte</label>
                                     <textarea name="corte" id="textarea" cols="30" rows="10" required></textarea>
                                     <input type="submit" onclick="return validar()" name="salvar" value="Salvar" id="submit"/>
+									<?php echo $this->session->tempdata('msg'); ?>
                                 </form>
                                 <?php echo form_close(); ?>
                             </div>
