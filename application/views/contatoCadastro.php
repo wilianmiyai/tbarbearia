@@ -66,7 +66,7 @@
                                     <label>Telefone</label>
                                     <input pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" title="Digite um numero de telefone no formato: (11) 11111-1111" type="tel" oninput="mascaraPhone(this)" name="telefone" id="phone" required>
                                     <label>Como você quer o corte</label>
-                                    <textarea name="corte" id="textarea" cols="30"  rows="10" placeholder="(Opcional)" required></textarea>
+                                    <textarea name="corte" id="textarea" cols="30"  rows="10" placeholder="(Opcional)"></textarea>
                                     <input type="submit" onclick="return validar()"  name="salvar" value="Salvar" id="submit"/>
 									<?php echo $this->session->tempdata('msg'); ?>
                                 </form>
